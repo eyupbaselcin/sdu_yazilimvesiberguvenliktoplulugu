@@ -1,4 +1,4 @@
-# web_sayfas-
+# web_sayfasi-
 Topluluk web sitesini yaptık
 readme_content = """# 🌐 Web Sayfası Projesi
 
@@ -53,14 +53,14 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları takip 
 
 1. **Repoyu Klonlayın:**
 ```bash
-git clone [https://github.com/eyupbaselcin/web_sayfas-.git](https://github.com/eyupbaselcin/web_sayfas-.git)
+git clone [https://github.com/eyupbaselcin/web_sayfasi-.git](https://github.com/eyupbaselcin/web_sayfasi-.git)
 
 ```
 
 
 2. **Proje Dizinine Geçin:**
 ```bash
-cd web_sayfas-
+cd web_sayfasi-
 
 ```
 
@@ -68,11 +68,7 @@ cd web_sayfas-
 3. **Sayfayı Başlatın:**
 * `index.html` dosyasını doğrudan herhangi bir web tarayıcısında (Chrome, Firefox, Edge vb.) açabilirsiniz.
 * Veya VS Code kullanıyorsanız **Live Server** eklentisi ile `Go Live` seçeneğini kullanabilirsiniz.
-
-
-
 ---
-
 ## 🤝 Katkıda Bulunma
 
 1. Bu depoyu çatallayın (Fork edin)
@@ -163,14 +159,14 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları takip 
 
 1. **Repoyu Klonlayın:**
 ```bash
-git clone [https://github.com/eyupbaselcin/web_sayfas-.git](https://github.com/eyupbaselcin/web_sayfas-.git)
+git clone [https://github.com/eyupbaselcin/web_sayfasi-.git](https://github.com/eyupbaselcin/web_sayfasi-.git)
 
 ```
 
 
 2. **Proje Dizinine Geçin:**
 ```bash
-cd web_sayfas-
+cd web_sayfasi-
 
 ```
 
