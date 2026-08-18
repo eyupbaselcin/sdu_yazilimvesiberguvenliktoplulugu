@@ -1,0 +1,144 @@
+:root{
+    --bg: #f4f7f8;
+    --card: #ffffff;
+    --muted: #6b7780;
+    --primary: #0b6d75;
+    --accent: #18a785;
+    --border: rgba(11,109,117,0.08);
+    --shadow: 0 8px 28px rgba(10,40,50,0.06);
+}
+:root{
+    --teal-100: #e9f6f6;
+    --teal-200: #d8f0ef;
+}
+p{
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+body{
+    font-family: Inter, Arial, sans-serif;
+    background: var(--bg);
+    margin: 0;
+    padding: 20px;
+    color: #21303a;
+}
+
+.events-row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    align-items: start;
+}
+
+.event-card{
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.event-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 22px 48px rgba(10,40,50,0.12);
+}
+
+.event-card img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.event-body{
+    padding: 14px 16px;
+}
+
+.event-body h4{
+    margin: 0 0 8px;
+    font-size: 1.02rem;
+}
+
+.event-body p{
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+/* make the whole card clickable and remove default link styles */
+.event-card .event-link{
+    display:block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.event-card .event-link img{display:block}
+
+/* Small adjustments for news cards used on o2.html */
+.news-card{padding:16px}
+.news-card .feature img{height:72px;object-fit:cover}
+
+@media (max-width: 1080px){
+    .events-row{grid-template-columns: 1fr 1fr}
+}
+
+@media (max-width: 720px){
+    .events-row{grid-template-columns: 1fr}
+    body{padding:12px}
+}
+
+/* utility */
+.center{text-align:center}
+
+/* Calendar card (match the attached design) */
+.calendar-card{
+    background: var(--card);
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 12px 40px rgba(10,40,50,0.06);
+    border: 1px solid rgba(11,109,117,0.05);
+    max-width: 980px;
+    margin: 18px auto;
+}
+
+.section-header{display:flex;align-items:flex-start;gap:12px;margin-bottom:18px}
+.section-title{font-size:1.6rem;margin:0;color:#12343a}
+.section-subtitle{margin:6px 0 0;color:var(--muted)}
+
+.card-title{font-size:1.05rem;margin:18px 0 10px;color:#12343a}
+
+.calendar{
+    width:100%;
+    border-collapse: collapse;
+    background: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.calendar thead th{
+    background: var(--teal-100);
+    color: var(--primary);
+    font-weight:700;
+    padding:14px 10px;
+    text-align:center;
+}
+.calendar tbody td{
+    border-top: 1px solid rgba(11,109,117,0.06);
+    padding: 22px 8px;
+    text-align:center;
+    vertical-align: middle;
+    font-weight:600;
+    color:#0f2b2d;
+    font-size:1rem;
+}
+.calendar tbody td span{display:inline-block;width:36px;height:36px;line-height:36px;border-radius:8px}
+.calendar tbody td.today span{background:var(--primary);color:#fff}
+
+/* remove default table cell focus outlines and make clickable days subtle */
+.calendar tbody td:focus{outline:none}
+
+@media (max-width:720px){
+    .calendar tbody td{padding:14px 6px;font-size:0.98rem}
+    .calendar-card{padding:16px}
+}
