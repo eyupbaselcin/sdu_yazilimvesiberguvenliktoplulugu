@@ -4,37 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İletişim</title>
-    <link rel="stylesheet" href="iletisim.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="giris.css">
+    <title>Giriş Ekranı</title>
 </head>
 
 <body>
-    <form id="form">
-        <div class="satir">
-            <label for="isim">İsim Soyisim</label><br>
-            <input type="text" id="isim">
+    <form id="form" class="login-form">
+        <div class="form-header">
+            <h1>Hoş Geldiniz</h1>
+            <p>Topluluk yönetim giriş ekranı</p>
+        </div>
+
+        <div class="field">
+            <label for="kullaniciAdi">
+                <i class="fa-solid fa-user"></i>
+                Kullanıcı Adı
+            </label>
+            <input id="kullaniciAdi" type="text" placeholder="(Kullanıcı adınızı girin)">
             <p id="nameError" class="error"></p>
         </div>
 
-        <div class="satir">
-            <label for="eposta">E-posta Adresi</label><br>
-            <input type="text" id="eposta">
+        <div class="field">
+            <label for="eposta">
+                <i class="fa-solid fa-envelope"></i>
+                Email
+            </label>
+            <input id="eposta" type="text" placeholder="(isim@ornek.com)">
             <p id="emailError" class="error"></p>
         </div>
 
-        <div class="satir">
-            <label for="oneri">Öneri veya Şikayet:</label><br>
-            <textarea id="oneri" rows="4"></textarea>
-            <p id="textError" class="error"></p>
+        <div class="field">
+            <label for="numara">
+                <i class="fa-solid fa-mobile"></i>
+                Numara
+            </label>
+            <input id="numara" class="phone" type="number" placeholder="(5##)### ## ##">
+            <p id="phoneError" class="error"></p>
         </div>
 
-        <div class="button">
-            <button type="submit">Gönder</button>
+        <div class="field">
+            <label for="sifre">
+                <i class="fa-solid fa-key"></i>
+                Şifre
+            </label>
+            <input id="sifre" type="password" placeholder="********">
+            <p id="passwordError" class="error"></p>
         </div>
+
+        <button type="submit">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            Giriş Yap
+        </button>
     </form>
 
-    <script src="iletisim.js"></script>
+    <script src="giris.js"></script>
 </body>
 
 </html>
