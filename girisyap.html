@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="UTF-8">
@@ -15,40 +15,58 @@
     <div class="wolf-background">
         <div class="wolf-3d">
             <div class="wolf-head">
-               <img src="bozkurt.jpg" >
+                <img src="bozkurt.jpg" alt="Bozkurt görseli">
             </div>
         </div>
     </div>
-    <form id="form" >
+
+    <form id="form" class="login-form">
+        <div class="form-header">
+            <h1>Hoş Geldiniz</h1>
+            <p>Topluluk yönetimine giriş yapın</p>
+        </div>
+
         <div class="field">
-            <i class="fa-solid fa-user"></i>
-            <label>Kullanıcı Adı:</label><br>
-            <input id="kullaniciAdi" type="text" placeholder="(isimin_giriniz)">
+            <label for="kullaniciAdi">
+                <i class="fa-solid fa-user"></i>
+                Kullanıcı Adı
+            </label>
+            <input id="kullaniciAdi" type="text" placeholder="(Kullanıcı adınızı girin)">
             <p id="nameError" class="error"></p>
         </div>
 
         <div class="field">
-            <i class="fa-solid fa-envelope"></i>
-            <label>Email:</label><br>
+            <label for="eposta">
+                <i class="fa-solid fa-envelope"></i>
+                Email
+            </label>
             <input id="eposta" type="text" placeholder="(isim@ornek.com)">
             <p id="emailError" class="error"></p>
         </div>
 
         <div class="field">
-            <i class="fa-solid fa-mobile"></i>
-            <label>Numara:</label><br>
+            <label for="numara">
+                <i class="fa-solid fa-mobile"></i>
+                Numara
+            </label>
             <input id="numara" class="phone" type="number" placeholder="(5##)### ## ##">
             <p id="phoneError" class="error"></p>
         </div>
+
         <div class="field">
-            <i class="fa-solid fa-key"></i>
-            <label>şifre:</label><br>
+            <label for="sifre">
+                <i class="fa-solid fa-key"></i>
+                Şifre
+            </label>
             <input id="sifre" type="password" placeholder="********">
             <p id="passwordError" class="error"></p>
         </div>
-        <p><button type="submit"><i class="fa-solid fa-right-to-bracket"></i> Giriş Yap</button></p>
-    </form>
 
+        <button type="submit">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            Giriş Yap
+        </button>
+    </form>
 
     <script src="giris.js"></script>
 </body>
